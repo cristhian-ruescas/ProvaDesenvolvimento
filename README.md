@@ -31,8 +31,12 @@ Cada exercício pode ser executado diretamente pelo Node.js. Veja abaixo como ro
 <ol>
     <li>Clone o repositório:</li>
     <pre><code>git clone https://github.com/cristhian-ruescas/ProvaDesenvolvimento.git</code></pre>
-    <li>Acesse o diretório do exercício desejado e execute com:</li>
-    <pre><code>node nome-do-script.js</code></pre>
+    <li>Acesse o diretório atividadesJS e execute o comando:</li>
+    <pre><code>Atividade Fibonacci: node atividade2.js</code></pre>
+    <pre><code>Atividade Media Faturamento: node atividade3.js</code></pre>
+    <pre><code>Atividade Faturamento Estados: node atividade4.js</code></pre>
+    <pre><code>Atividade String Invertida: node atividade5.js</code></pre>
+
 </ol>
 
 ---
