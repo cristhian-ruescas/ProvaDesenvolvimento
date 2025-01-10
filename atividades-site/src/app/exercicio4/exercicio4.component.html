@@ -1,0 +1,19 @@
+<div class="container">
+    <h2>Faturamento por Estado</h2>
+  
+    <div>
+      <p *ngFor="let estado of ['SP', 'RJ', 'MG', 'ES', 'Outros']">
+        {{ estado }}: R$ {{ formatarEmReais(faturamentoPorEstado[estado]) }}
+      </p>
+    </div>
+  
+    <button (click)="onCalcularPercentuais()">Mostrar Percentuais</button>
+  
+    <div class="percentuais-container" *ngIf="percentuais.length > 0">
+      <h3>Percentuais de Faturamento</h3>
+      <div *ngFor="let percentual of percentuais" class="percentual-item">
+        {{ percentual.estado }}: {{ percentual.percentual }}%
+      </div>
+    </div>
+  </div>
+  

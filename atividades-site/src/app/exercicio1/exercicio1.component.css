@@ -1,0 +1,149 @@
+.exercicio-container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    z-index: 1;
+    background: #007bff;
+    color: white;
+  }
+
+  .resultado-text{
+    color: #007bff;
+  }
+  
+  h3 {
+    font-size: 28px;
+    color: #ffffff;
+    margin-bottom: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  .reveal-button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .reveal-button:hover {
+    background-color: #003d7a;
+    transform: scale(1.1);
+  }
+  
+  .animacao-container {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    background-color: #0056b3; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    animation: fadeIn 2s ease-out;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .numero {
+    margin-right: 5px;
+    opacity: 0;
+    animation: numberReveal 0.5s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes numberReveal {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .resultado {
+    background-color: #f0f8ff;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .resultado-value {
+    font-size: 28px;
+    font-weight: bold;
+    color: #007bff;
+    text-align: center;
+  }
+  
+  .fogos {
+    position: absolute;
+    top: -10px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fogosAnimacao 3s ease-out infinite;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+  
+  @keyframes fogosAnimacao {
+    0% {
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+    50% {
+      box-shadow: 0 0 20px rgba(0, 123, 255, 0.8), 0 0 30px rgba(0, 123, 255, 0.6);
+    }
+    100% {
+      box-shadow: 0 0 10px rgba(0, 255, 255, 0.7), 0 0 20px rgba(0, 255, 255, 0.4);
+    }
+  }
+  
+  body {
+    background: #eaf2f7;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+  }
+  
+  body::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    z-index: -1;
+  }
+  

@@ -1,0 +1,24 @@
+<div class="container">
+    <h1>Verifique se um número pertence à sequência de Fibonacci</h1>
+    <div class="input-container">
+      <input
+        type="number"
+        [(ngModel)]="numeroInformado"
+        placeholder="Digite um número"
+        class="input"
+        min="0"
+      />
+      <button (click)="verificarFibonacci()" class="btn">Verificar</button>
+    </div>
+    
+    <div *ngIf="erro" class="erro-message">
+      <p>{{ erro }}</p>
+    </div>
+  
+    <div class="result">
+      <p *ngIf="resultado !== null">
+        O número <span>{{ numeroInformado }}</span> {{ resultado ? 'pertence' : 'não pertence' }} à sequência de Fibonacci.
+      </p>
+    </div>
+  </div>
+  

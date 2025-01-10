@@ -1,0 +1,74 @@
+.container {
+    width: 80%;
+    max-width: 600px;
+    padding: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  h2 {
+    color: #333;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  p {
+    font-size: 1.1rem;
+    margin: 8px 0;
+    color: #555;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left; 
+  }
+  
+  .currency {
+    font-weight: bold;
+    color: #006400;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .percentuais-container {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eef2f3;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  .percentual-item {
+    font-size: 1.1rem;
+    color: #333;
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+  }
+  
+  .percentual-item:last-child {
+    border-bottom: none;
+  }
+  
+  .percentual-item span {
+    font-weight: bold;
+    color: #007bff;
+  }
+  

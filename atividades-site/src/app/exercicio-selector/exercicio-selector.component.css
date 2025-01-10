@@ -1,0 +1,25 @@
+h2 {
+    font-size: 20px;
+    color: #007bff;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  
+  .exercicio-select {
+    width: 200px;
+    padding: 8px;
+    font-size: 14px;
+    margin: 0 auto;
+    display: block;
+    border: 1px solid #007bff; 
+    border-radius: 4px;
+    background-color: #fff;
+    box-sizing: border-box;
+    margin-bottom: 50px;
+  }
+  
+  .exercicio-select:focus {
+    border-color: #0056b3;
+    outline: none;
+  }
+  

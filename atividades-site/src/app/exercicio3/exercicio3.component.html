@@ -1,0 +1,18 @@
+<div class="container">
+    <h1>Analise de Faturamento</h1>
+    <div class="input-container">
+      <label for="file-upload" class="btn">Escolher Arquivo (JSON)</label>
+      <input type="file" id="file-upload" (change)="processarArquivo($event)" accept=".json" style="display: none;">
+    </div>
+  
+    <div *ngIf="erro" class="erro-message">
+      <p>{{ erro }}</p>
+    </div>
+  
+    <div *ngIf="resultFaturamento" class="result">
+      <p><strong>Menor faturamento: </strong>{{ resultFaturamento.menorFaturamento | currency:'BRL' }}</p>
+      <p><strong>Maior faturamento: </strong>{{ resultFaturamento.maiorFaturamento | currency:'BRL' }}</p>
+      <p><strong>Dias com faturamento acima da média: </strong>{{ resultFaturamento.diasAcimaDaMedia }}</p>
+    </div>
+  </div>
+  

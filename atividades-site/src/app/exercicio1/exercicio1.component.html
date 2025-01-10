@@ -1,0 +1,20 @@
+<div class="exercicio-container">
+    <h3>Exercício 1 - Soma dos Números</h3>
+  
+    <button (click)="revelarMagica()" class="reveal-button">Revele a Mágica!</button>
+    
+    <div *ngIf="animando" class="animacao-container">
+      <p class="numero" *ngFor="let num of numerosVisiveis; let i = index">
+        {{ num }} 
+        <span *ngIf="i < numerosVisiveis.length - 1"> + </span> 
+      </p>
+    </div>
+  
+    <div *ngIf="resultadoRevelado" class="resultado">
+      <div class="fogos">
+        <p><strong class="resultado-text">Resultado final da soma: </strong> <span class="resultado-value">{{ calcularSoma() }}</span></p>
+      </div>
+    </div>
+  </div>
+  
+  
